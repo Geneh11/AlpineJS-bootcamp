@@ -1,0 +1,52 @@
+{
+    
+    "background":{
+        "photo": "./2TM.jpg"
+    },
+    "user": {
+        "fullName": "Sifiso Mohlala",
+        "photo": "./IMG-20220116-WA0007.jpg",
+        "alt": "greatest of all.jpg"
+       
+    },
+    "city": {
+        "name": "Beijing",
+        "photo": "./Beijing.jfif",
+        "description": "Beijing is the capital of China. It is home to top universities, numerous museums, and national treasures such as the Forbidden City, the Temple of Heaven, and the Summer Palace."
+    },
+    "foreignLanguage": {
+        "language": "Mandarin",
+        "phrases": [
+            {
+                "englishPhrase": "Hello",
+                "foreignLanguage": "你好 (Nǐ hǎo)"
+            },
+            {
+                "englishPhrase": "Thank you",
+                "foreignLanguage": "谢谢 (xièxiè)!"
+            },
+            {
+                "englishPhrase": "Goodbye",
+                "foreignLanguage": "再见 (Zài jiàn)"
+            }
+        ]
+    },
+    "favouriteSubjects": [
+        {
+            "name": "Mathematics",
+            "photo":"./maths.jfif",
+            "description": "The study of numbers, quantities, shapes, and space using mathematical processes and concepts."
+            
+        },
+        {
+            "name": "Quantity Surveying module",
+            "photo": "./QS.jfif",
+            "description": "Quantity Surveying module typically covers a range of topics and skills essential for professionals in the construction industry. These modules are designed to provide a comprehensive understanding of cost management, contract administration, project management, and construction technology."
+        },
+        {
+            "name": "Computer Science",
+            "photo":"./F web.jfif",
+            "description": "The study of computers and computational systems including their theory, design, development, and application."
+        }
+    ]
+}

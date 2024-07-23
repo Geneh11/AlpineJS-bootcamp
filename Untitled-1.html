@@ -1,0 +1,130 @@
+<div class="container">
+    <div class="row">
+        <div class="col s1"></div>
+        <h2>{{user.fullName}}</h2>
+        <div class="col s1">
+            <img src={{user.photo}} alt="user.alt">
+        </div>
+
+        </div>
+  <!-- Page Content goes here -->
+</div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+</head>
+<body>
+    <div class="container">
+      <!-- Page Content goes here -->
+      <h3>{{user.name}}</h3>
+            <img src="user.photo" alt="">
+    </div>
+  
+
+<!-- ---------------------------- -->
+<div class="profile">
+    <div class="profile-container">
+        <h2 class="full-name">{{fullName}}</h2>
+        {{#if data.user.photo}}
+            <img class="profile-photo" src="{{data.user.photo}}" alt="Profile Photo">
+        {{/if}}
+    </div>
+</div>
+
+
+    
+
+<div class="city">
+    <div class="city-container">
+        <div class="city-info">
+            
+        </div>
+        {{#if data.city.photo}}
+            <img class="city-photo" src="{{data.city.photo}}">
+        {{/if}}
+    </div>
+</div>
+
+     <div>
+            <h3 class="center-align">ForeignLanguage </h3>
+            <p><strong></strong> {{foreignLanguage.language}}</p>
+            
+
+            <div class="table-wrapper">
+                <table class="language-table">
+                    <thead>
+                        <tr>
+                            <th>English Phrase</th>
+                            <th>Portuguese</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hello</td>
+                            <td>olá</td>
+                        </tr>
+                        <tr>
+                            <td>Bye</td>
+                            <td>tchau</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+
+
+
+
+            <div class="favourite-subjects">
+                <h3 class="center-align">Favourite Subjects</h3>
+                <div class="subject-grid">
+                    {{#each data.favouriteSubjects}}
+                        <div class="subject-item">
+                            <img class="subject-photo" src="{{photo}}" alt="{{name}}">
+                            <div class="subject-info">
+                                <strong>{{name}}</strong>
+                                <p>{{description}}</p>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+
+
+
+
+            <script id="places-template" type="text/x-handlebars-template">
+                <section>
+                    <h3>Historical Places</h3>
+                    <div class="places">
+                        {{#each places}}
+                        <div>
+                            <h4>{{name}}</h4>
+                            <div class="hplaces">
+                                <div>
+                                    <p>{{description}}</p>
+                                </div>
+                                <div>
+                                    <img src="{{image}}" alt="{{name}}">
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </section>
+            </script>
+            <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
